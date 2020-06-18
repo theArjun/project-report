@@ -1,4 +1,4 @@
-\documentclass[a4paper, 14pt]{report}
+\documentclass[a4paper, 14pt, oneside]{report}
 % For manipulating title alignments.
 \usepackage{titlesec}
 % For including pictures
@@ -24,102 +24,33 @@
 \date{2020 April 19}
 
 \begin{document}
+
 	\include{titlepage}
 	
-\begin{description}
-
+	\begin{description}
+	
 		\pagenumbering{roman}
 
 		\include{approval}
 		\include{acknowledgement}
 		\include{abstract}
-		
+		%
 		\pagenumbering{gobble}
 		
 		\tableofcontents
 		\listoffigures
 		\listoftables
 		
-		\include{introduction}
-		
-	
-		
-	
-	\begin{center}
-		\chapter{LITERATURE REVIEW}
-	\end{center}
-	
-	\begin{center}
-		\chapter{TOOLS AND METHODOLOGIES}
-	\end{center}
-	
-	\section{REQUIRED TOOLS}
-	\section{APPROACH USED}
-	\subsection{USE CASE DIAGRAM}
-	\subsection{ENTITY RELATIONSHIP DIAGRAM}
-	\subsection{SYSTEM SEQUENCE DIAGRAM}
-	\subsection{CLASS DIAGRAM}
-	
-	\begin{center}
-		\chapter{TESTING}
-	\end{center}
-	\section{OBJECTIVES OF TESTING}
-	\section{TEST CASES}
-	\section{TESTING GOALS}
-	
-	\begin{center}
-		\chapter{TIMELINE CHART}
-	\end{center}
-	
-	\begin{center}
-		\chapter{RESULTS AND DISCUSSION}
-	\end{center}
-	\section{FUTURE RESEARCH AND RECOMMENDATIONS}
+		\include{introduction}		
+		\include{literature_review}
+		\include{tools_and_methodologies}
+		\include{testing}
+		\include{timeline_chart}
+		\include{results_and_discussions}
+		\include{snapshots}
 
-	\begin{center}
-		\chapter{SNAPSHOTS}
-	\end{center}
-	\section{WIREFRAMES}
-	\newpage
-	\section{USER INTERFACES}
+	\end{description}
 	
-	
-\begin{center}
-	\begin{figure}[h!]
-  \includegraphics[width=0.5\textwidth]{gces.png}
-  \caption{SNAPSHOT 1}
-\end{figure}
-
-\begin{figure}[h!]
-  \includegraphics[width=0.5\textwidth]{gces.png}
-  \caption{SNAPSHOT 2}
-\end{figure}
-
-\begin{figure}[h!]
-  \includegraphics[width=0.5\textwidth]{gces.png}
-  \caption{SNAPSHOT 3}
-\end{figure}
-\end{center}
-	
-\end{description}
-	
-	\newpage
-	\begin{thebibliography}{9}
-
-		\bibitem{book}
-		Dor Bahadur Bista
-			[\textit{People of Nepal}].
-		1987.
-
-		\bibitem{quora}
-		Quora: Do Newars of Nepal have high-low caste or are they all one ethnicity/caste?,
-		\\\texttt{https://www.quora.com/Do-Newars-of-Nepal-have-high-low- \\ caste-or-are-they-all-one-ethnicity-caste}
-
-		\bibitem{sujanblog}
-		The Newar Civilization,
-		\\\texttt{http://sujan.net.np/about-newar/}
-
-	\end{thebibliography}
-
+	\include{bibliography}
 	
 \end{document}
