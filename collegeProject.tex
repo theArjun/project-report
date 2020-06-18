@@ -1,0 +1,125 @@
+\documentclass[a4paper, 14pt]{report}
+% For manipulating title alignments.
+\usepackage{titlesec}
+% For including pictures
+\usepackage{graphicx}
+% To disable numbering
+\usepackage{sectsty}
+% Times New Roman Like Font
+\usepackage{mathptmx}
+% For increasing font sizes
+\usepackage{extsizes}
+% Margin of the report document
+\usepackage[	left=1.5in,right=1in,top=1.5in,bottom=1in]{geometry}
+% Line Spacing
+\linespread{1.5}
+
+
+\chapternumberfont{\fontsize{18pt}{18pt}\selectfont}
+\chaptertitlefont{\fontsize{18pt}{18pt}\selectfont}
+
+
+\title{College Project Template}
+\author{Arjun Prasad Adhikari}
+\date{2020 April 19}
+
+\begin{document}
+	\include{titlepage}
+	
+\begin{description}
+
+		\pagenumbering{roman}
+
+		\include{approval}
+		\include{acknowledgement}
+		\include{abstract}
+		
+		\pagenumbering{gobble}
+		
+		\tableofcontents
+		\listoffigures
+		\listoftables
+		
+		\include{introduction}
+		
+	
+		
+	
+	\begin{center}
+		\chapter{LITERATURE REVIEW}
+	\end{center}
+	
+	\begin{center}
+		\chapter{TOOLS AND METHODOLOGIES}
+	\end{center}
+	
+	\section{REQUIRED TOOLS}
+	\section{APPROACH USED}
+	\subsection{USE CASE DIAGRAM}
+	\subsection{ENTITY RELATIONSHIP DIAGRAM}
+	\subsection{SYSTEM SEQUENCE DIAGRAM}
+	\subsection{CLASS DIAGRAM}
+	
+	\begin{center}
+		\chapter{TESTING}
+	\end{center}
+	\section{OBJECTIVES OF TESTING}
+	\section{TEST CASES}
+	\section{TESTING GOALS}
+	
+	\begin{center}
+		\chapter{TIMELINE CHART}
+	\end{center}
+	
+	\begin{center}
+		\chapter{RESULTS AND DISCUSSION}
+	\end{center}
+	\section{FUTURE RESEARCH AND RECOMMENDATIONS}
+
+	\begin{center}
+		\chapter{SNAPSHOTS}
+	\end{center}
+	\section{WIREFRAMES}
+	\newpage
+	\section{USER INTERFACES}
+	
+	
+\begin{center}
+	\begin{figure}[h!]
+  \includegraphics[width=0.5\textwidth]{gces.png}
+  \caption{SNAPSHOT 1}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=0.5\textwidth]{gces.png}
+  \caption{SNAPSHOT 2}
+\end{figure}
+
+\begin{figure}[h!]
+  \includegraphics[width=0.5\textwidth]{gces.png}
+  \caption{SNAPSHOT 3}
+\end{figure}
+\end{center}
+	
+\end{description}
+	
+	\newpage
+	\begin{thebibliography}{9}
+
+		\bibitem{book}
+		Dor Bahadur Bista
+			[\textit{People of Nepal}].
+		1987.
+
+		\bibitem{quora}
+		Quora: Do Newars of Nepal have high-low caste or are they all one ethnicity/caste?,
+		\\\texttt{https://www.quora.com/Do-Newars-of-Nepal-have-high-low- \\ caste-or-are-they-all-one-ethnicity-caste}
+
+		\bibitem{sujanblog}
+		The Newar Civilization,
+		\\\texttt{http://sujan.net.np/about-newar/}
+
+	\end{thebibliography}
+
+	
+\end{document}
