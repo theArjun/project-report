@@ -1,0 +1,71 @@
+\documentclass[a4paper, 12pt]{report}
+% For manipulating title alignments.
+\usepackage{titlesec}
+% To disable numbering
+\usepackage{sectsty}
+% Enable Palatino Font
+\usepackage{tgpagella}
+% For increasing font sizes
+\usepackage{extsizes}
+% Margin of the report document
+\usepackage[	left=1.5in,right=1in,top=1.5in,bottom=1in]{geometry}
+% For inserting dates
+\usepackage{datetime2}
+
+% Modifying the chapter title.
+\titleformat{\chapter}[display]
+{\normalfont\huge}{\chaptertitlename\ \thechapter}{16pt}{\Huge}
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+
+
+\title{Concept Paper Template}
+\author{Arjun Prasad Adhikari}
+\date{2020 June 18}
+
+\begin{document}
+
+	\pagenumbering{gobble}
+	\chapter*{\makebox[\linewidth]{Concept Paper}}
+	\hrule
+	\vspace{2cm}
+	
+	This concept paper is submitted for Minor Project II from the 3rd year, GCES.
+	\vspace{0.3cm}
+	
+	
+	\section*{Project Name}
+	Our project will be named as YOUR PROJECT NAME .
+	\vspace{0.5cm}
+	
+	\section*{Participants}
+	Our project will be contributed by :
+	\begin{enumerate}
+		\item Participant No. 1 (Leader)
+		\item Participant No. 2
+		\item Participant No. 3
+	\end{enumerate}
+	\vspace{0.5cm}
+
+
+	\section*{Introduction}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	\vspace{0.5cm}
+	
+	
+	\section*{Purpose}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+	\vspace{0.5cm}
+	
+	
+	\section*{Description}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	\vspace{0.5cm}
+	
+	
+	\section*{Supervisor Preference}
+	With the experience of PREFERRED SUPERVISOR NAME in \{ ... ... \}, we are planning to working on, it would be a great privilege to learn from him/her. Thus, we request to assign PREFERRED SUPERVISOR NAME as our project supervisor.
+	\vspace{4cm}	
+	
+	\DTMToday
+\end{document}

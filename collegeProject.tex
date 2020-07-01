@@ -1,4 +1,9 @@
-\documentclass[a4paper, 14pt, oneside]{report}
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+% !TeX root = collegeProject.tex
+
+\documentclass[a4paper, 14pt, openany]{report}
+
 % For manipulating title alignments.
 \usepackage{titlesec}
 % For including pictures
@@ -10,47 +15,64 @@
 % For increasing font sizes
 \usepackage{extsizes}
 % Margin of the report document
-\usepackage[	left=1.5in,right=1in,top=1.5in,bottom=1in]{geometry}
+\usepackage[left=1.5in,right=1in,top=1.5in,bottom=1in]{geometry}
+% For two column layout
+\usepackage{multicol}
+% Lorem Ipsum 
+\usepackage{lipsum}
+% Gantt Chart 
+\usepackage{pgfgantt}
+% for list of abbreviations
+\usepackage{enumitem}
+% For date and time
+\usepackage{datetime}
+
 % Line Spacing
 \linespread{1.5}
 
+% Title spacing
+\chapternumberfont{\fontsize{18pt}{18pt}\selectfont\center}
+\chaptertitlefont{\fontsize{18pt}{18pt}\selectfont\center}
 
-\chapternumberfont{\fontsize{18pt}{18pt}\selectfont}
-\chaptertitlefont{\fontsize{18pt}{18pt}\selectfont}
+\sectionfont{\fontsize{16}{16}\selectfont}
+\subsectionfont{\fontsize{15}{15}\selectfont}
 
+\usepackage{caption}
 
-\title{College Project Template}
+\title{Gandaki College of Engineering and Science Academic Project Report Template}
 \author{Arjun Prasad Adhikari}
 \date{2020 April 19}
 
+\graphicspath{{figures/}}
+
 \begin{document}
+	
+	\pagenumbering{gobble}
+	
+	\maketitle
 
-	\include{titlepage}
+	\include{chapters/titlepage}
 	
-	\begin{description}
-	
-		\pagenumbering{roman}
+	\pagenumbering{roman}
 
-		\include{approval}
-		\include{acknowledgement}
-		\include{abstract}
-		%
-		\pagenumbering{gobble}
-		
-		\tableofcontents
-		\listoffigures
-		\listoftables
-		
-		\include{introduction}		
-		\include{literature_review}
-		\include{tools_and_methodologies}
-		\include{testing}
-		\include{timeline_chart}
-		\include{results_and_discussions}
-		\include{snapshots}
+	\include{chapters/approval}
+	\include{chapters/acknowledgement}
+	\include{chapters/abstract}
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\include{chapters/abbr}
+	
+	
+	\include{chapters/introduction}		
+	\include{chapters/literature_review}
+	\include{chapters/tools_and_methodologies}
+	\include{chapters/testing}
+	\include{chapters/timeline_chart}
+	\include{chapters/results_and_discussions}
+	\include{chapters/snapshots}	
+	\include{chapters/bibliography}
 
-	\end{description}
-	
-	\include{bibliography}
-	
 \end{document}

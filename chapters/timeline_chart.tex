@@ -1,0 +1,24 @@
+\begin{center}
+	\chapter{TIMELINE CHART}
+\end{center}
+\par
+\begin{figure}
+	\centering
+	\begin{ganttchart}[
+		inline, 
+		bar inline label anchor=west,
+		bar inline label node/.append style={anchor=west, text=white},
+		bar/.append style={fill=gray!120!black,}, 
+		bar height=1,]{0}{18}
+		\gantttitlelist{0, ..., 18}{1}\\
+		\ganttbar[inline=false]{Design}{0}{3}
+		\ganttbar{J1}{0}{3}
+		\ganttbar{J2}{3}{4}
+		\ganttbar{}{5}{18}\\
+		\ganttbar[inline=false]{M2}{0}{5}
+		\ganttbar{J2}{5}{8}
+		\ganttbar{J1}{8}{12}
+		\ganttbar{}{12}{18}
+	\end{ganttchart}
+	\caption{To demonstrate Flow shop Scheduling}
+\end{figure}
